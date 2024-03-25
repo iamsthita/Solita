@@ -28,8 +28,8 @@ This repository is for Solita interview discussion.
 
 ## Challenges:
 
-- **Consumption Plan Limitations:** VNet integration is not supported with the Consumption plan. Upgrading the App Service plan to a Premium or Dedicated is required.
-- **Migration Process:** Directly migrating an Azure Function from a Consumption plan to an App Service plan (Dedicated) is not currently supported. A recommended approach involves:
+- **Consumption Plan Limitations:** VNet integration is not supported with the Consumption Hosting option. Upgrading the hosting option to Functions Premium or App service plan is required.
+- **Migration Process:** Directly migrating an Azure Function from a Consumption plan to an App Service plan is not currently supported. A recommended approach involves:
   - Creating a new function app within the desired App Service plan.
   - Migrating existing Function configuration and code to the new function app.
 - **Downtime:** There might be a brief period of downtime during the traffic migration process.
